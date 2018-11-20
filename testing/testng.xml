@@ -1,0 +1,9 @@
+<suite name="testing">
+ <test name="testngTest">
+ <parameter name="Username" value="tomsmith1"/>
+ <parameter name="Password" value="SuperSecretPassword!"/>
+ <classes>
+ <class name="Test_cases.Login_page" />
+ </classes>
+ </test>
+</suite>

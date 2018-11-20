@@ -1,0 +1,29 @@
+Web url : http://the-internet.herokuapp.com/
+Java solutions : https://github.com/tourdedave/elemental-selenium-tips/commit/107b6a07191dd30a94f5ba2f49652aa684713a8c
+https://github.com/tourdedave/elemental-selenium-tips
+http://www.seleniumeasy.com/test/basic-first-form-demo.html - Demo site to try next
+
+ABTesting - done
+Basic_Auth - Dont know solution auto it not working.
+Broken images - scripted need to test in any other website
+challenging DOM - need to gain more knowledge(leaving this now cos need to get deep knowledge in basics)
+checkboxes - done
+context_menu - works in firefox will cover it in next session 
+disappearing_elements - done(have found diff and we can do watever we need to do with that)
+drag_and_drop - framed but not working need to find the reason
+drop down - done
+Dynamic content - need more knowledge need to research
+Dynamic Controls - completed
+dynamic_loading - in progress
+Exit intend - No knowledge need more knowldge to research
+Downloading file - Done - file downloaded to the specific location
+Uploading file - Done-need to try in anyother sample website
+Floating Menu - no idea what to do
+Forgot password - correct To in javamail calss
+Login page(Example for @dataprovider and @parameter annotations in testng)- Done
+Frames - Done, IFrame - done but need to gain more knowledge
+Geo location - link is not working
+horizontal slider - done(need to investigate more)
+Infinite scroll - Done - This is the example of javascriptexecutor in selenium need more knowledge in it
+jQUERY menu - done
+Js alert - 

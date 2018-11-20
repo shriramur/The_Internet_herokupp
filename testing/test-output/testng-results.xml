@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="11713" started-at="2018-11-17T13:41:06Z" finished-at="2018-11-17T13:41:18Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="11713" started-at="2018-11-17T13:41:06Z" finished-at="2018-11-17T13:41:18Z">
+      <class name="Test_cases.jsalert">
+        <test-method status="PASS" signature="setup()[pri:0, instance:Test_cases.jsalert@4c70fda8]" name="setup" is-config="true" duration-ms="7930" started-at="2018-11-17T13:41:06Z" finished-at="2018-11-17T13:41:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="jsAlert()[pri:0, instance:Test_cases.jsalert@4c70fda8]" name="jsAlert" duration-ms="3695" started-at="2018-11-17T13:41:14Z" finished-at="2018-11-17T13:41:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jsAlert -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:Test_cases.jsalert@4c70fda8]" name="teardown" is-config="true" duration-ms="53" started-at="2018-11-17T13:41:18Z" finished-at="2018-11-17T13:41:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Test_cases.jsalert -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
