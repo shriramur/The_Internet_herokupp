@@ -21,7 +21,7 @@ public class Selwebddriver {
 			 driver=new ChromeDriver();
 		 }
 		 else if(browser.equalsIgnoreCase("chrome")){
-			 System.setProperty("webdriver.chrome.driver","C:\\Users\\Rampage Rider\\Desktop\\softwares\\testing\\Windows_Drivers\\chromedriver.exe");
+			 System.setProperty("webdriver.chrome.driver","C:\\Users\\Rampage Rider\\Desktop\\softwares\\Mylocal_git\\testing\\Windows_Drivers\\chromedriver.exe");
 			 driver=new ChromeDriver();
 		 }
 		 }
