@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Test_cases.notification_message">
+      <class name="Test_cases.tinymce">
         <methods>
           <include name="setup"/>
-          <include name="notify_me"/>
           <include name="teardown"/>
+          <include name="tinymecc"/>
         </methods>
-      </class> <!-- Test_cases.notification_message -->
+      </class> <!-- Test_cases.tinymce -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

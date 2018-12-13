@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [testing]">
+  <test thread-count="5" name="testngTest(failed)">
+    <parameter name="Username" value="tomsmith1"/>
+    <parameter name="Password" value="SuperSecretPassword!"/>
+    <classes>
+      <class name="Test_cases.status_code">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="status_codes"/>
+        </methods>
+      </class> <!-- Test_cases.status_code -->
+    </classes>
+  </test> <!-- testngTest(failed) -->
+</suite> <!-- Failed suite [testing] -->

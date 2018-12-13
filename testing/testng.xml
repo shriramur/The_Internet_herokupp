@@ -4,6 +4,7 @@
  <parameter name="Password" value="SuperSecretPassword!"/>
  <classes>
  <class name="Test_cases.Login_page" />
+ <class name="Test_cases.status_code" />
  </classes>
  </test>
 </suite>

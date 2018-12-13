@@ -1,4 +1,4 @@
-	package Test_cases;
+	
 
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
@@ -6,6 +6,7 @@ import java.io.File;
 import java.util.HashMap;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -17,6 +18,8 @@ import org.testng.annotations.Test;
 
 public class downloading_file {
 	public WebDriver driver;
+	
+	
 	
 	@BeforeTest
 	public void chrompref(){  
@@ -30,32 +33,35 @@ public class downloading_file {
 		 DesiredCapabilities cap = DesiredCapabilities.chrome();  
 		 cap.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);  
 		 cap.setCapability(ChromeOptions.CAPABILITY, options);//applying capabilities to chrome browser
-		 System.setProperty("webdriver.chrome.driver", "C:\\Users\\hii\\workspace\\testing\\Windows_Drivers\\chromedriver.exe"); 
+		 System.setProperty("webdriver.chrome.driver", "C:\\Users\\Rampage Rider\\Desktop\\softwares\\Mylocal_git\\testing\\Windows_Drivers\\chromedriver.exe"); 
 		 driver = new ChromeDriver(options);
-		
+		 
 	}
-	
 	@Test
 	public void filedownload() throws InterruptedException{
+		String scriptToExecute = "var performance = window.performance || window.mozPerformance || window.msPerformance || window.webkitPerformance || {}; var network = performance.getEntries() || {}; return network;";
+		 String netData = ((JavascriptExecutor)driver).executeScript(scriptToExecute).toString();
+		 System.out.println(netData);
 		driver.get("http://the-internet.herokuapp.com/download");
-		String filename = driver.findElement(By.linkText("test.txt")).getText();
+		String filename = driver.findElement(By.linkText("upload.txt")).getText();
 		driver.findElement(By.linkText("test.txt")).click();
 		System.out.println("The file has been downloaded");
 		Thread.sleep(4000);
-		delfil(filename);//comment this to prevent deleting a file
+		//delfil(filename);//comment this to prevent deleting a file
 	}
 	//function to deleting a file 
-	public void delfil(String filename){
-		 File file = new File("C:\\Users\\hii\\workspace\\testing\\browser_downloads");//making a file obj to access this location
-	        File[] files = file.listFiles();//retrive list of files that is in that location
-	        for(File f: files){
-	        	if(f.getName().equals(filename)){
-	        		f.delete();//deleting a file
-	        		System.out.println("The file deleted is "+f.getName());
-	        	}
-	        }
-
-		}
+//	@Test
+//	public void delfil(String filename){
+//		 File file = new File("C:\\Users\\hii\\workspace\\testing\\browser_downloads");//making a file obj to access this location
+//	        File[] files = file.listFiles();//retrive list of files that is in that location
+//	        for(File f: files){
+//	        	if(f.getName().equals(filename)){
+//	        		f.delete();//deleting a file
+//	        		System.out.println("The file deleted is "+f.getName());
+//	        	}
+//	        }
+//
+//		}
 	@AfterTest
 	public void teardown(){
 		driver.close();

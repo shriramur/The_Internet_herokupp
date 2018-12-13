@@ -17,11 +17,17 @@ public class Brokenlinks_finder {
 		 httpConn.connect();
 		 //use getResponseCode() to get the response code. 
 		 if(httpConn.getResponseCode()== 200) { 
-		 System.out.println(urlLink+" - "+httpConn.getResponseMessage());
+		 System.out.println(urlLink+" - "+httpConn.getResponseMessage() + "The response code is" + httpConn.getResponseCode());
 		 }
 		 if(httpConn.getResponseCode()== 404) {
-		 System.out.println(urlLink+" - "+httpConn.getResponseMessage());
- }
+		 System.out.println(urlLink+" - "+httpConn.getResponseMessage() + "The response code is" + httpConn.getResponseCode());
+		 }
+		 if(httpConn.getResponseCode()== 301){
+		 System.out.println(urlLink+" - "+httpConn.getResponseMessage() + "The response code is" + httpConn.getResponseCode()); 
+		 }
+		 if(httpConn.getResponseCode()== 500){
+		 System.out.println(urlLink+" - "+httpConn.getResponseMessage() + "The response code is" + httpConn.getResponseCode()); 
+		 }
  }
  //getResponseCode method returns = IOException - if an error occurred connecting to the server. 
  catch (Exception e) {
