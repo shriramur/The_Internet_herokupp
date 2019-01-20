@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="24947" started-at="2018-12-13T17:45:09Z" finished-at="2018-12-13T17:45:34Z">
+  <suite name="Default suite" duration-ms="32000" started-at="2019-01-04T19:05:45Z" finished-at="2019-01-04T19:06:17Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="24947" started-at="2018-12-13T17:45:09Z" finished-at="2018-12-13T17:45:34Z">
-      <class name="Test_cases.webtables">
-        <test-method status="PASS" signature="setup()[pri:0, instance:Test_cases.webtables@4c70fda8]" name="setup" is-config="true" duration-ms="9668" started-at="2018-12-13T17:45:09Z" finished-at="2018-12-13T17:45:18Z">
+    <test name="Default test" duration-ms="32000" started-at="2019-01-04T19:05:45Z" finished-at="2019-01-04T19:06:17Z">
+      <class name="Test_cases.drag_and_drop">
+        <test-method status="PASS" signature="setup()[pri:0, instance:Test_cases.drag_and_drop@4c70fda8]" name="setup" is-config="true" duration-ms="9113" started-at="2019-01-04T19:05:45Z" finished-at="2019-01-04T19:05:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="webTable()[pri:0, instance:Test_cases.webtables@4c70fda8]" name="webTable" duration-ms="13145" started-at="2018-12-13T17:45:19Z" finished-at="2018-12-13T17:45:32Z">
+        <test-method status="PASS" signature="drag_drop()[pri:0, instance:Test_cases.drag_and_drop@4c70fda8]" name="drag_drop" duration-ms="22754" started-at="2019-01-04T19:05:54Z" finished-at="2019-01-04T19:06:17Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- webTable -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:Test_cases.webtables@4c70fda8]" name="teardown" is-config="true" duration-ms="2093" started-at="2018-12-13T17:45:32Z" finished-at="2018-12-13T17:45:34Z">
+        </test-method> <!-- drag_drop -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:Test_cases.drag_and_drop@4c70fda8]" name="teardown" is-config="true" duration-ms="96" started-at="2019-01-04T19:06:17Z" finished-at="2019-01-04T19:06:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- Test_cases.webtables -->
+      </class> <!-- Test_cases.drag_and_drop -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

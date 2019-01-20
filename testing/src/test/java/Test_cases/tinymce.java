@@ -13,10 +13,10 @@ public class tinymce extends testbase{
 	@Test
 	public void tinymecc() throws InterruptedException{
 		Selwebddriver.driver.get("http://the-internet.herokuapp.com/tinymce");
-		//List<WebElement> wb = Selwebddriver.driver.findElements(By.xpath("//div[@id='mceu_14-body']/child::*"));
-		List<WebElement> wb = Selwebddriver.driver.findElements(By.xpath("//*"));
+		List<WebElement> wb = Selwebddriver.driver.findElements(By.xpath("//div[@id='mceu_14-body']/child::*"));
+		//List<WebElement> wb = Selwebddriver.driver.findElements(By.xpath("//*"));
 		for(int i=0;i<wb.size();i++){
-			System.out.println(wb.get(i).getAttribute("id").toString());
+			System.out.println(wb.get(i).getAttribute("id"));
 		}
 		
 		/*Selwebddriver.driver.findElement(By.id("tinymce")).clear();
